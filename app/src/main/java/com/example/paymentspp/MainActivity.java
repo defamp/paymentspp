@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         mBtn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent iLogin = new Intent(getApplicationContext(), LoginActivity.class);
+                Intent iLogin = new Intent(getApplicationContext(), NavigationActivity.class);
                 startActivity(iLogin);
             }
         });

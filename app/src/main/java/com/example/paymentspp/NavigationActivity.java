@@ -1,5 +1,6 @@
 package com.example.paymentspp;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +25,7 @@ import androidx.appcompat.widget.Toolbar;
 public class NavigationActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
+    Dialog myDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +33,7 @@ public class NavigationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_navigation);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        myDialog = new Dialog(this);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -50,5 +53,29 @@ public class NavigationActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
+    }
+
+    public void ButtonDelete(View v){
+        myDialog.setContentView(R.layout.popup_delete);
+
+        myDialog.show();
+    }
+
+    public void ButtonUpdate(View v){
+        myDialog.setContentView(R.layout.popup_update);
+
+        myDialog.show();
+    }
+
+    public void TidakLakukan(View v){
+        myDialog.dismiss();
+    }
+
+    public void LakukanHapus(View v){
+
+    }
+
+    public void LakukanUpdate(View v){
+
     }
 }

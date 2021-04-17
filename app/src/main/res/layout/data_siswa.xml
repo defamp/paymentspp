@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/lightblue"
-    tools:context=".ui.dtsiswa.DataSiswaFragment">
+    android:background="@color/lightblue">
 
     <TextView
         android:id="@+id/text_siswa"
@@ -206,6 +205,7 @@
             android:layout_marginRight="16dp"
             android:drawableLeft="@drawable/ic_baseline_add_circle_outline_24"/>
         <Button
+            android:onClick="ButtonUpdate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Ubah"
@@ -214,6 +214,7 @@
             android:layout_marginRight="16dp"
             android:drawableLeft="@drawable/ic_baseline_edit_24"/>
         <Button
+            android:onClick="ButtonDelete"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hapus"

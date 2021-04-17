@@ -23,13 +23,6 @@ public class DataSppFragment extends Fragment {
         datasppViewModel =
                 new ViewModelProvider(this).get(DataSppViewModel.class);
         View root = inflater.inflate(R.layout.data_spp, container, false);
-        final TextView textView = root.findViewById(R.id.text_spp);
-        datasppViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
-            @Override
-            public void onChanged(@Nullable String s) {
-                textView.setText(s);
-            }
-        });
         return root;
     }
 }
