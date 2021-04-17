@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_marginLeft="20dp"
+        app:srcCompat="@drawable/ic_baseline_person_24"
+        android:id="@+id/imageView"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/namasiswa"
+            android:textColor="@color/black"
+            android:textSize="40px"
+            android:layout_marginTop="5px"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/pembayaran"
+            android:textColor="#BF000000"
+            android:textSize="40px"
+            android:layout_marginTop="5px"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>

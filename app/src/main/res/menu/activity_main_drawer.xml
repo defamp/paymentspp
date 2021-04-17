@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/dshbrd"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Dashboard" />
+    </group>
+
+    <group android:id="@+id/dtsiswa"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_datasiswa"
+            android:title="Data Siswa" />
+    </group>
+    <group android:id="@+id/dtkelas"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_datakelas"
+            android:title="Data Kelas" />
+    </group>
+
+    <group android:id="@+id/dtpetugas"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_datapetugas"
+            android:title="Data Petugas" />
+    </group>
+
+    <group android:id="@+id/dtspp"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dataspp"
+            android:title="Data SPP" />
+    </group>
+
+    <group android:id="@+id/dttransaksi"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_datatransaksi"
+            android:title="Data Transaksi" />
+    </group>
+
+    <group android:id="@+id/lprn"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/laporan"
+            android:title="Laporan" />
+    </group>
+
+    <group android:id="@+id/klr"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/keluar"
+            android:title="Keluar" />
+    </group>
+</menu>

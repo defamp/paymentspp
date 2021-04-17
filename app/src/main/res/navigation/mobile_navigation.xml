@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.paymentspp.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_datasiswa"
+        android:name="com.example.paymentspp.ui.dtsiswa.DataSiswaFragment"
+        android:label="Data Siswa"
+        tools:layout="@layout/data_siswa" />
+
+    <fragment
+        android:id="@+id/nav_datakelas"
+        android:name="com.example.paymentspp.ui.dtkelas.DataKelasFragment"
+        android:label="Data Kelas"
+        tools:layout="@layout/data_kelas" />
+
+    <fragment
+        android:id="@+id/nav_datapetugas"
+        android:name="com.example.paymentspp.ui.dtpetugas.DataPetugasFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_dataspp"
+        android:name="com.example.paymentspp.ui.dtspp.DataSppFragment"
+        android:label="Data Siswa"
+        tools:layout="@layout/data_siswa" />
+
+    <fragment
+        android:id="@+id/nav_datatransaksi"
+        android:name="com.example.paymentspp.ui.dttransaksi.DataTransaksiFragment"
+        android:label="Data Kelas"
+        tools:layout="@layout/data_kelas" />
+</navigation>

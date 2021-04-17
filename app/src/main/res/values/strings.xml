@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PaymentSPP</string>
+    <string name="selamt"><b>SELAMAT!!!</b></string>
+    <string name="title_activity_navigation">NavigationActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    
+    <string-array name="jurusan">
+        <item></item>
+        <item>RPL</item>
+        <item>TKJ</item>
+        <item>MM</item>
+        <item>TAV</item>
+        <item>TITL</item>
+        <item>TOI</item>
+    </string-array>
+
+    <string-array name="role">
+        <item></item>
+        <item>Petugas</item>
+        <item>Admin</item>
+    </string-array>
+</resources>

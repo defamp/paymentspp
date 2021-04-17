@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="600px"
+    android:layout_height="600px"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="250px"
+        android:layout_height="250px"
+        android:layout_marginTop="31px"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_baseline_check_circle_outline_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/selamt"
+        android:textSize="60px"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selamat Anda Berhasil Login"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:onClick="ShowNavigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#87CEEB"
+        android:textColor="@color/black"
+        android:paddingHorizontal="100px"
+        android:textSize="40px"
+        android:layout_marginTop="10px"
+        android:text="OK"/>
+
+</LinearLayout>
