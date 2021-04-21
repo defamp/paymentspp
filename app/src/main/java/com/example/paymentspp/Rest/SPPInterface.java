@@ -12,22 +12,22 @@ import retrofit2.http.PATCH;
 import retrofit2.http.POST;
 
 public interface SPPInterface {
-    @GET("spp")
+    @GET("api/spp")
     Call<GetSPP>getSPP();
     @FormUrlEncoded
-    @POST("spp")
+    @POST("api/spp/create")
     Call<PostPatchDelSPP>postSPP(
             @Field("tahun_ajaran") String tahun_ajaran,
             @Field("nominal") int nominal
     );
-    @PATCH("spp")
+    @PATCH("api/spp/edit/{id_spp}")
     Call<PostPatchDelSPP>patchSPP(
             @Field("id_spp") int id_spp,
             @Field("tahun_ajaran") String tahun_ajaran,
             @Field("nominal") int nominal
     );
     @FormUrlEncoded
-    @HTTP(method = "DELETE", path = "spp", hasBody = true)
+    @HTTP(method = "DELETE", path = "api/spp/delete/{id_spp}", hasBody = true)
     Call<PostPatchDelSPP>deleteSPP(
             @Field("id_spp") int id_spp
     );

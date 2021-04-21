@@ -4,7 +4,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class APIClient {
-    public static final String BASE_URL = "ukk-spp.herokuapp.com/api/";
+    public static final String BASE_URL = "http://ukk-spp.herokuapp.com/";
     public static Retrofit retrofit = null;
 
     public static Retrofit getClient(){
