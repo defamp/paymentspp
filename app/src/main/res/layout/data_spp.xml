@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/lightblue">
+    android:background="@color/lightblue"
+    tools:context=".Activity.SPPMainActivity">
 
     <TextView
         android:id="@+id/text_spp"
