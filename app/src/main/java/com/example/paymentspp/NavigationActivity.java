@@ -32,7 +32,6 @@ public class NavigationActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_navigation);
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
         myDialog = new Dialog(this);
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
